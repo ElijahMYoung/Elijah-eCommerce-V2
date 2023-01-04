@@ -41,28 +41,28 @@ function Home() {
             aria-label="Facebook"
             class="fa fa-facebook"
           >
-            .
+            {" "}
           </a>
           <a
             href="https://twitter.com"
             aria-label="Twitter"
             class="fa fa-twitter"
           >
-            .
+            {" "}
           </a>
           <a
             href="https://www.instagram.com"
             aria-label="Instagram"
             class="fa fa-instagram"
           >
-            .
+            {" "}
           </a>
           <a
             href="https://www.snapchat.com"
             aria-label="Snapchat"
             class="fa fa-snapchat-ghost"
           >
-            .
+            {" "}
           </a>
         </div>
         <div class="footer-left">
@@ -70,8 +70,8 @@ function Home() {
             <a class="link-1" href="index.html">
               Home
             </a>
-            <a href="products.html">Products</a>
-            <a href="contact.html">Contact Us</a>
+            <a href="products.html"> Products</a>
+            <a href="contact.html"> Contact Us</a>
           </p>
           <p>Waxing Wandlight &copy; 2022</p>
         </div>

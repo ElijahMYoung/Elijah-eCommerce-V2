@@ -40,28 +40,28 @@ function Contact() {
             aria-label="Facebook"
             class="fa fa-facebook"
           >
-            .
+            {" "}
           </a>
           <a
             href="https://twitter.com"
             aria-label="Twitter"
             class="fa fa-twitter"
           >
-            .
+            {" "}
           </a>
           <a
             href="https://www.instagram.com"
             aria-label="Instagram"
             class="fa fa-instagram"
           >
-            .
+            {" "}
           </a>
           <a
             href="https://www.snapchat.com"
             aria-label="Snapchat"
             class="fa fa-snapchat-ghost"
           >
-            .
+            {" "}
           </a>
         </div>
         <div class="footer-left">
