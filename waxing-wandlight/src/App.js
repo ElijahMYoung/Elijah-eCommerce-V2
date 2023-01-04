@@ -2,8 +2,11 @@ import "./App.css";
 import { BrowserRouter, Routes, Route, Link, NavLink } from "react-router-dom";
 import "./css/Home.css";
 import Home from "./pages";
-import Products from "./pages/products";
+import Productas from "./pages/products";
 import Contact from "./pages/contact";
+import showMenu from "./components/mobileMenu/showMenu";
+import hideMenu from "./components/mobileMenu/hideMenu";
+
 function App() {
   return (
     <BrowserRouter>
@@ -17,7 +20,7 @@ function App() {
               src="Images/black-circle-close-button-png-5.png"
               alt="circle close button icon"
               class="sidebtn"
-              onclick="hideMenu()"
+              onclick={hideMenu()}
             />
             <ul>
               <li>
@@ -35,7 +38,7 @@ function App() {
             src="Images/menu_icon.png"
             alt="menu bars icon"
             class="sidebtn"
-            onclick="showMenu()"
+            onclick={showMenu()}
           />
         </nav>
         <h1>Waxing Wandlight</h1>
@@ -43,7 +46,7 @@ function App() {
       <main>
         <Routes>
           <Route index element={<Home />} />
-          <Route path="products" element={<Products />} />
+          <Route path="products" element={<Productas />} />
           <Route path="contact" element={<Contact />} />
         </Routes>
       </main>

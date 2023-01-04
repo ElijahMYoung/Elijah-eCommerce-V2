@@ -28,7 +28,7 @@ connection.connect((err) => {
 });
 
 app.get("/products", (req, res) => {
-  connection.query("SELECT * FROM products", (error, results) => {
+  connection.query("SELECT * FROM items", (error, results) => {
     if (error) throw error;
     res.send(results);
   });

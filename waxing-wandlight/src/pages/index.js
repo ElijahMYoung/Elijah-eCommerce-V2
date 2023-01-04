@@ -1,3 +1,7 @@
+import "../components/slider/slider.css";
+import "../components/slider/sliderrepeater.js";
+import "../components/slider/sliderManual.js";
+
 function Home() {
   return (
     <div className="Home">

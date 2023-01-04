@@ -9,7 +9,7 @@ function Products() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get("/products");
+        const res = await axios.get("http://localhost:8800/products");
         setProducts(res.data);
       } catch (err) {
         console.log(err);
@@ -40,6 +40,14 @@ function Products() {
             ))}
           </div>
         </div>
+        {/* <div>
+          {items.map((item) => (
+            <div key={item.id}>
+              <h1>{item.name}</h1>
+              <p>{item.description}</p>
+            </div>
+          ))}
+        </div> */}
       </div>
 
       <footer class="footer-distributed">
@@ -49,7 +57,7 @@ function Products() {
             aria-label="Facebook"
             class="fa fa-facebook"
           >
-            .
+            {" "}
           </a>
           <a
             href="https://twitter.com"
@@ -89,3 +97,39 @@ function Products() {
 }
 
 export default Products;
+
+// class Productas extends React.Component {
+//   componentDidMount() {
+//     axios.get("http://localhost:8800/api/products").then((res) => {
+//       const products = res.data;
+//       this.setState({ products });
+//     });
+//   }
+//   render() {
+//     return (
+//       <>
+//         <div className="product-container">
+//           {this.state.products.map((product) => {
+//             return (
+//               <div className="product">
+//                 <img src={product.icon} alt={product.item} />
+//                 <h2 className="title">{product.name}</h2>
+//                 <span className="fa fa-star checked"></span>
+//                 <span className="fa fa-star checked"></span>
+//                 <span className="fa fa-star checked"></span>
+//                 <span className="fa fa-star checked"></span>
+//                 <span className="fa fa-star"></span>
+//                 <h3>{product.description}</h3>
+//                 <p className="price">${product.price}</p>
+//                 <a href="contact.html" className="button">
+//                   ADD TO CART
+//                 </a>
+//               </div>
+//             );
+//           })}
+//         </div>
+//       </>
+//     );
+//   }
+// }
+// export default Productas;
